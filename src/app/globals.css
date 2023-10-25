@@ -2,26 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+/* ////////////////////////////////////////////////// */
+
+
+
+.text-box{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+td{
+  /* padding-left: 15px ; */
+  border:1px solid rgb(252, 247, 247);
+  color : white;
+  padding: 5px;
+  text-align: center;
+  
+  
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+
+
+.text-box>textarea{
+  background-color: rgb(64, 63, 63);
+  color : rgb(233, 228, 228);
+  border-radius: 10px;
+  outline: none;
+  padding: 10px;
+  width: 80%;
+  font-size: 18px;
+  /* background-color: red; */
+}
+.text-box > center{
+  width: 80%;
+  overflow: hidden;
+  background-color: rgb(58, 58, 58);
+  /* padding-top: 10px; */
+  
+  margin-top: 20px;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////////////// */
+.awDiv
+{
+  background-color:rgb(58, 58, 58);
+  color:#000033;
+  font-size:10pt;
+
+  border-spacing: 3px;
+}
+.awSpan2
+{
+  margin-left:10px;
+  width:40px;
+  font-weight: bold;
+}
+
+
+.awSpan1
+{
+  margin-left:20px;
+  width:20px;
+  font-weight: bold;
+  
 }

@@ -11,7 +11,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+        <head>
+          {/* Include the JavaScript CDN */}
+          <script src="https://hinkhoj.com/common/js/keyboard.js"></script>
+          
+          {/* Include the CSS CDN */}
+         
+        
+          
+          
+        
+        </head>
+        <body className={inter.className}>
+          {children}
+          
+          </body>
+      </html>
   )
 }
